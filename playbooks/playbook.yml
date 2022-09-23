@@ -5,6 +5,9 @@
   vars:
     git_repository: https://github.com/snuuffy/Ansible_roles.git
     git_branch: "main"
+    docker_daemon_options:
+      insecure-registries : ["192.168.44.44:8082"]
+
 
   tasks:
   - name: Create directory
